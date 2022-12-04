@@ -1,76 +1,64 @@
-# Module 06 Mini-Project: Library of Congress Search Tool
+# WeatherIO
 
-In this activity, you will work with a group to build an application that searches and displays results from the Library of Congress API.
+## Description
 
-## Instructions
+What was my motivation?
 
-The completed application should meet the following criteria:
+- To learn how to fetch data and use it on an application
 
-* As a user, I can submit a search query from the application to request data and receive a response from the Library of Congress.
+Why did I build this project?
 
-* As a user, I can either perform a generic search for data in all formats or I can select a format in the form to help filter results.
+- To use my knowledge of html and css and fetch data from an outside source to use in my application.
 
-* As a user, I can see all of the results of my search displayed on a separate page.
+What problem does it solve?
 
-* As a user, I can conduct additional searches from the results page as well.
+- It solved the problem of creating my own weather network.
 
-To learn about how to use this API, check out the Requests section of the [Library of Congress API documentation](https://libraryofcongress.github.io/data-exploration/).
+What did I learn?
 
-### The Homepage
+- I learned how to use data fetched from an online source to use how I want it on my own application.
 
-The homepage (`index.html`) should have the following:
+## Table of Contents
 
-* A simple, well thought-out UI.
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
+- [License](#license)
 
-* A form with a text input field to capture a search query and an option select dropdown to capture the format of the search query. The options in the dropdown should be a list of the possible format values listed in the [Library of Congress API documentation on requests](https://libraryofcongress.github.io/data-exploration/requests.html#format).
+## Installation
 
-* A browser event listener attached to the form to execute a function on submission, which will capture both form values and redirect the user to a search results page with those values included in the URL as query parameters. This will use the browser's `location.replace()` method.
+- Step 1: Put in your api key in the javascript file
+- Step 2: Right click on index.html and run live server
 
-* If there is no format selected from the dropdown, the URL should look something like the following example:
+## Usage
 
-  ```http
-  /search-results.html?q=dogs&format=
-  ```
+![WeatherIO Dashboard](./Main/assets/weatherIO.png)
 
-* If there is a format selected from the dropdown, the URL should look something like the following example:
+## Contributing
 
-  ```http
-  /search-results.html?q=dogs&format=photos
-  ```
+No collaborators
 
-### The Search Results Page
+## Tests
 
-The search results page (`search-results.html`) should have and do the following:
+No Tests
 
-* On page load, if there are query parameters, immediately parse them and use them in a request URL to fetch data from the Library of Congress API.
+## Questions
 
-* If there is a value for the format query parameter, use the format endpoint to search for something based on the chosen format. For more information, see the [Library of Congress API documentation on the format endpoint](https://libraryofcongress.github.io/data-exploration/requests.html#format).
+Github Profile: josephpicardat
 
-* If there is no value for the format query parameter, use the search endpoint to search for all types of data. For more information, see the [Library of Congress API documentation on the search endpoint](https://libraryofcongress.github.io/data-exploration/requests.html#search).
+If you need to reach me, you can with through my email: josephpicardat1@gmail.com
 
-* The response from the API request will then be displayed on the page. It is up to you and your team to determine which data should be displayed from the overall `response` object, but you must use data from the `results` property in the `response` object. For more information, see the [Library of Congress API documentation on responses](https://libraryofcongress.github.io/data-exploration/responses.html).
+## License
 
-* The same form from the homepage should be here as well. Instead of redirecting a user to another page, however, it will perform a search right on the page and display the new results.
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+(https://opensource.org/licenses/MIT)
 
-## Assets
+Copyright 2022 Joseph Picardat
 
-The following image demonstrates the homepage's appearance and functionality:
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-![The home page shows a search bar with the ability to select a format from a dropdown menu.](./Images/01-homepage.png)
+    The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-The following image demonstrates the search results page's appearance and functionality:
-
-![The search results page displays results from a search conducted in the form on the left side of the page.](./Images/02-search-results-page.png)
-
----
-
-## 💡 Hints
-
-Will every result have the same data? If not, how will we handle printing it to the page? Can the form design and functionality from the homepage be reused for the search results page?
-
-## 🏆 Bonus
-
-* How can we build this application using our knowledge in Git collaboration?
-
----
-© 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
