@@ -34,7 +34,7 @@ What did I learn?
 
 ## Usage
 
-![WeatherIO Dashboard](./Main/assets/weatherIO.png)
+![WeatherIO Dashboard](./assets/weatherIO.png)
 
 ## Contributing
 
